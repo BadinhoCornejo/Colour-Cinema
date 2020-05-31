@@ -101,7 +101,7 @@ Como punto de partida, se obtuvieron los colores correspondientes a cada fotogra
 
 Posteriormente de implementó la siguiente clase estática conteniendo los colores anteriormente señalados.
 ```
-	public static class Colours
+public static class Colours
     {
         public static readonly List<int> ColourPalette = new List<int>()
         {
@@ -251,7 +251,7 @@ Como punto inicial, en nuestro **PlayerController** se crea la función necesari
 ```
 2. Dentro de la sentencia *If* se implementa el siguiente código para el manejo del score.
 ```
-			// Verifica que el color no esté en el score
+		// Verifica que el color no esté en el score
             if (score.scores.Select(i => 
                     i.GetComponent<MeshRenderer>().material.color)
                     .Any(_color => ((Color32) _color).Equals(color)))
