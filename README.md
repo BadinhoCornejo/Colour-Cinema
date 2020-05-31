@@ -233,25 +233,25 @@ Como punto inicial, en nuestro **PlayerController** se crea la función necesari
 	FallingBlock fallingBlock = fallingBlockGameObject.GetComponent<FallingBlock>();
 
 	Color32 color = fallingBlock.color;
-    if (_colours.Contains(color))
+    	if (_colours.Contains(color))
 	{
-    	// Se implementa toda la lógica de suma de puntos    
+    		// Se implementa toda la lógica de suma de puntos    
 	}
     
-    // En caso no haya fallado se resta la vida del jugador 
+    	// En caso no haya fallado se resta la vida del jugador 
 	health.health--;
 
 	if (health.health != 0) return;
 	health.hearts[0].sprite = health.emptyHeart;
 	
-    /* En caso la vida llegó a 0 destruye al jugador y carga la escena de **GameOver** */    
+    	// En caso la vida llegó a 0 destruye al jugador y carga la escena de **GameOver**
 	Destroy(gameObject);
 
 	Loader.Load(Loader.Scene.GameOver);
 ```
 2. Dentro de la sentencia *If* se implementa el siguiente código para el manejo del score.
 ```
-		// Verifica que el color no esté en el score
+	    // Verifica que el color no esté en el score
             if (score.scores.Select(i => 
                     i.GetComponent<MeshRenderer>().material.color)
                     .Any(_color => ((Color32) _color).Equals(color)))
@@ -262,10 +262,10 @@ Como punto inicial, en nuestro **PlayerController** se crea la función necesari
             // Aumenta el puntaje
             score.score++;
 
-			// Obtiene el sprite al que se le asignará el color acertado
+	    // Obtiene el sprite al que se le asignará el color acertado
             MeshRenderer rend = score.scores[score.score -1].GetComponent<MeshRenderer>();
 
-			// Se le asigna el color
+	    // Se le asigna el color
             rend.material.color = new Color32(color.r, color.g, color.b, 255);
 			
             // Carga la siguiente escena en caso completó todo el score
