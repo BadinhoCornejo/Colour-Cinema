@@ -6,13 +6,13 @@ Como solución a esta propuesta se implementó un videojuego de tipo “Falling 
 ## Desarrollo
 Se inició con el proceso de selección de 5 películas con una paleta de colores sobresaliente, cada película tiene características diferentes, lo que mejorará el aprendizaje de los participantes. Las 5 películas seleccionadas fueron:
 #### Blade Runner (1982) por Ridley Scott
-![Blade_Runner_1982.png](Assets\Sprites\Films\Blade_Runner_1982.png)
+![Blade_Runner_1982.png](./Assets/Sprites/Films/Blade_Runner_1982.png)
 #### Interstellar (2014) por Cristopher Nolan
-![Interstellar.png](.\Assets\Sprites\Films\Interstellar.png)
+![Interstellar.png](./Assets\Sprites/Films/Interstellar.png)
 #### Call Me By Your Name (2017) por Luca Guadagnino
-![Call_Me_By_Your_Name.png](.\Assets\Sprites\Films\Call_Me_By_Your_Name.png)
+![Call_Me_By_Your_Name.png](./Assets/Sprites/Films/Call_Me_By_Your_Name.png)
 #### Moonrise Kingdom (2012) por Wes Anderson
-![Moonrise_Kingdom.png](.\Assets\Sprites\Films\Moonrise_Kingdom.png)
+![Moonrise_Kingdom.png](./Assets/Sprites/Films/Moonrise_Kingdom.png)
 #### Suspiria (1977) por Dario Argento
 ![Suspiria_1977.png](.\Assets\Sprites\Films\Suspiria_1977.png)
 ### Unity
