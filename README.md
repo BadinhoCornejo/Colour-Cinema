@@ -8,34 +8,34 @@ Se inició con el proceso de selección de 5 películas con una paleta de colore
 #### Blade Runner (1982) por Ridley Scott
 ![Blade_Runner_1982.png](./Assets/Sprites/Films/Blade_Runner_1982.png)
 #### Interstellar (2014) por Cristopher Nolan
-![Interstellar.png](./Assets\Sprites/Films/Interstellar.png)
+![Interstellar.png](./Assets/Sprites/Films/Interstellar.png)
 #### Call Me By Your Name (2017) por Luca Guadagnino
 ![Call_Me_By_Your_Name.png](./Assets/Sprites/Films/Call_Me_By_Your_Name.png)
 #### Moonrise Kingdom (2012) por Wes Anderson
 ![Moonrise_Kingdom.png](./Assets/Sprites/Films/Moonrise_Kingdom.png)
 #### Suspiria (1977) por Dario Argento
-![Suspiria_1977.png](.\Assets\Sprites\Films\Suspiria_1977.png)
+![Suspiria_1977.png](./Assets/Sprites/Films/Suspiria_1977.png)
 ### Unity
 Se inició creando los objetos en la escena.
-![2020-05-31_10h21_51.png](.\Docs\2020-05-31_10h21_51.png)
+![2020-05-31_10h21_51.png](./Docs/2020-05-31_10h21_51.png)
 El GameObject **Player** sería el personaje principal del videojuego, y su ubicación en escena sería la siguiente.
-![2020-05-31_10h24_55.png](.\Docs\2020-05-31_10h24_55.png)
+![2020-05-31_10h24_55.png](./Docs/2020-05-31_10h24_55.png)
 El **Canvas** es responsable de contener los elementos de la UI, entre ellos encontramos la vida del personaje, el puntaje que va obteniendo en cada nivel y la fotografía de la película.
-![2020-05-31_10h27_06.png](.\Docs\2020-05-31_10h27_06.png)
+![2020-05-31_10h27_06.png](./Docs/2020-05-31_10h27_06.png)
 Los elementos con el nombre **Image** corresponden a la vida del personaje. Se utilizaron corazones para su representación.
-![2020-05-31_10h30_37.png](.\Docs\2020-05-31_10h30_37.png)
+![2020-05-31_10h30_37.png](./Docs/2020-05-31_10h30_37.png)
 **Film** viene a ser la fotografía de la película que corresponde a ese nivel.
 Los elementos **Quad** son los indicadores del puntaje del personaje, y su representación son cuadrados que posteriormente se le asignará el color que el jugador vaya coleccionando.
 **SpawnManager** se encargará de generar los ++FallingBlocks++ que el jugador tendrá que esquivar o atrapar en caso pertenezca a la paleta de colores.
-![2020-05-31_10h39_41.png](.\Docs\2020-05-31_10h39_41.png)
+![2020-05-31_10h39_41.png](./Docs/2020-05-31_10h39_41.png)
 Este objeto recibe un script *Spawner* que se encargará de gestionar la generación de cada bloque. Los elementos **Seconds Between Spawns** y **Spawn Angle Max** se usan para asignar los segundos de generación de cada bloque y el ángulo límite de rotación respectivamente, mientras que **Spawn Size Max** se encarga de asignar el máximo del tamaño del bloque. Estos dos últimos atributos son necesarios, debido a que el tamaño y el ángulo asignados a los bloques son valores aleatorios en los rangos de estos valores. 
 En el inspector del **SpawnManager** se puede observar también el **Prefab** asignado el cual es un cubo con las siguientes características.
-![2020-05-31_10h48_36.png](.\Docs\2020-05-31_10h48_36.png)
+![2020-05-31_10h48_36.png](./Docs/2020-05-31_10h48_36.png)
 Con respecto a **Mesh Renderer** se asignó como elemento *Sprites-Default* debido que este objeto se debe renderizar como un Sprite para poder asignarle un color. El script **FallingBlock** asociado especifica la velocidad con la que el bloque debe caer, y el color por defecto que este debe tener. También se agregaron como componentes **Box Collider 2D** para el manejo de colisiones y **Audio Source** para asignar un clip de audio que será utilizado para cuando el bloque sea generado y de un estado de alerta al jugador.
 ### ¿Cómo se asignaron los colores?
 Como punto de partida, se obtuvieron los colores correspondientes a cada fotografía.
 #### Blade Runner
-![colour_palette_br.png](.\Docs\colour_palette_br.png)
+![colour_palette_br.png](./Docs/colour_palette_br.png)
 1. 0x07162D
 2. 0x1E2E45
 3. 0x412740
@@ -48,7 +48,7 @@ Como punto de partida, se obtuvieron los colores correspondientes a cada fotogra
 10. 0x838D84
 
 #### Interstellar
-![colour_palette_interstellar.png](.\Docs\colour_palette_interstellar.png)
+![colour_palette_interstellar.png](./Docs/colour_palette_interstellar.png)
 1. 0x5A3F36
 2. 0x181F27
 3. 0x2D3238
@@ -61,7 +61,7 @@ Como punto de partida, se obtuvieron los colores correspondientes a cada fotogra
 10. 0xF2DFD1
 
 #### Call Me By Your Name
-![colour_palette_cmbyn.png](.\Docs\colour_palette_cmbyn.png)
+![colour_palette_cmbyn.png](./Docs/colour_palette_cmbyn.png)
 1. 0x0E1810
 2.   0x66402D
 3.   0x936F4D
@@ -74,7 +74,7 @@ Como punto de partida, se obtuvieron los colores correspondientes a cada fotogra
 10.   0x365B61
 
 #### Moonrise Kingdom
-![colour_palette_mk.png](.\Docs\colour_palette_mk.png)
+![colour_palette_mk.png](./Docs/colour_palette_mk.png)
 1. 0x410D00
 2. 0x831901
 3. 0x983E00
@@ -87,7 +87,7 @@ Como punto de partida, se obtuvieron los colores correspondientes a cada fotogra
 10. 0x454F51
 
 #### Suspiria
-![colour_palette_sus.png](.\Docs\colour_palette_sus.png)
+![colour_palette_sus.png](./Docs/colour_palette_sus.png)
 1. 0x3D4631
 2. 0x617F5B
 3. 0x948824
@@ -278,7 +278,7 @@ Como punto inicial, en nuestro **PlayerController** se crea la función necesari
 ```
 
 ### Resultado del juego
-![2020-05-31_11h48_29.png](.\Docs\2020-05-31_11h48_29.png)
+![2020-05-31_11h48_29.png](./Docs/2020-05-31_11h48_29.png)
 Finalmente se puede observar la escena del juego, con el bloque de un color generado aleatoriamente dentro de la lista de colores y los indicadores de puntaje y de vida, además de la fotografía de la película.
 
 
