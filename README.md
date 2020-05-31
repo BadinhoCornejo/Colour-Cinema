@@ -1,5 +1,5 @@
 # Colour Cinema
-## Proyecto de aplicación para el curso de Videojuegos y aplicaciones Móviles
+### Proyecto de aplicación para el curso de Videojuegos y aplicaciones Móviles
 ### Resumen
 El videojuego presentado a continuación tiene como historia la de un personaje en busca de la paleta de colores de la fotografía de una película en específico. El principal objetivo es aprender en profundidad de la composición de colores de una escena, para permitir el aprendizaje por parte del jugador de los conceptos básicos de la teoría de colores.
 Como solución a esta propuesta se implementó un videojuego de tipo “Falling Block”, en el cual cada bloque es asignado con un color del conjunto de paleta de colores de los films rescatados y el jugador tiene como misión evitar colisionar con un color que no pertenezca a la paleta de colores de la fotografía mostrada. Finalmente, el videojuego fue implementado con el motor de videojuegos Unity y el lenguaje de programación C#.
@@ -34,7 +34,7 @@ Se inició con el proceso de selección de 5 películas con una paleta de colore
 <br/><br/>
 - **Film** viene a ser la fotografía de la película que corresponde a ese nivel.
 - Los elementos **Quad** son los indicadores del puntaje del personaje, y su representación son cuadrados que posteriormente se le asignará el color que el jugador vaya coleccionando.
-- **SpawnManager** se encargará de generar los ++FallingBlocks++ que el jugador tendrá que esquivar o atrapar en caso pertenezca a la paleta de colores.
+- **SpawnManager** se encargará de generar los *FallingBlocks* que el jugador tendrá que esquivar o atrapar en caso pertenezca a la paleta de colores.
 <br/><br/>
 ![2020-05-31_10h39_41.png](./Docs/2020-05-31_10h39_41.png)
 <br/><br/>
@@ -229,7 +229,7 @@ List<Color32> GetActiveColors(string imageName)
         }
 
         return coloursCode.Select(Color.FromArgb).
-                        Select(colorArgb => new Color32(colorArgb.R, 							colorArgb.G, colorArgb.B, 255)).
+                        Select(colorArgb => new Color32(colorArgb.R, colorArgb.G, colorArgb.B, 255)).
                         ToList();
     }
 
@@ -256,12 +256,12 @@ Como punto inicial, en nuestro **PlayerController** se crea la función necesari
 	if (health.health != 0) return;
 	health.hearts[0].sprite = health.emptyHeart;
 	
-    	// En caso la vida llegó a 0 destruye al jugador y carga la escena de **GameOver**
+    	// En caso la vida llegó a 0 destruye al jugador y carga la escena de GameOver
 	Destroy(gameObject);
 
 	Loader.Load(Loader.Scene.GameOver);
 ```
-2. Dentro de la sentencia *If* se implementa el siguiente código para el manejo del score.
+2. Dentro de la sentencia *if* se implementa el siguiente código para el manejo del score.
 ```
 	    // Verifica que el color no esté en el score
             if (score.scores.Select(i => 
