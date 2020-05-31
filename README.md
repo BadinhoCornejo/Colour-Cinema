@@ -1,5 +1,5 @@
 # Colour Cinema
-### Proyecto de aplicación para el curso de Videojuegos y aplicaciones Móviles
+### Proyecto de aplicación para el curso de Videojuegos y Aplicaciones Móviles
 ### Resumen
 El videojuego presentado a continuación tiene como historia la de un personaje en busca de la paleta de colores de la fotografía de una película en específico. El principal objetivo es aprender en profundidad de la composición de colores de una escena, para permitir el aprendizaje por parte del jugador de los conceptos básicos de la teoría de colores.
 Como solución a esta propuesta se implementó un videojuego de tipo “Falling Block”, en el cual cada bloque es asignado con un color del conjunto de paleta de colores de los films rescatados y el jugador tiene como misión evitar colisionar con un color que no pertenezca a la paleta de colores de la fotografía mostrada. Finalmente, el videojuego fue implementado con el motor de videojuegos Unity y el lenguaje de programación C#.
