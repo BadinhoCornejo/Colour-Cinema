@@ -635,12 +635,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 7
-  screenHalfWidthInWorldUnits: 0
-  health: {fileID: 0}
-  score: {fileID: 0}
-  _colours: []
-  currentScene:
-    m_Handle: 0
 --- !u!61 &890525789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -701,7 +695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7ffb1dfea1ed5549a001cdff7a358f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
+  score: 4
   totalScore: 5
   scores:
   - {fileID: 1110622939}
