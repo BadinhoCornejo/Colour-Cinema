@@ -250,7 +250,7 @@ Como punto inicial, en nuestro **PlayerController** se crea la función necesari
     		// Se implementa toda la lógica de suma de puntos    
 	}
     
-    	// En caso no haya fallado se resta la vida del jugador 
+    	// En caso no haya acertado se resta la vida del jugador 
 	health.health--;
 
 	if (health.health != 0) return;
